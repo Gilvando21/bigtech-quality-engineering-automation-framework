@@ -1,6 +1,8 @@
 
 # BigTech Quality Engineering Automation Framework
 
+Enterprise Quality Engineering Automation Framework designed to demonstrate scalable testing architecture used in fintech and high‑scale technology environments.
+
 ![CI](https://github.com/Gilvando21/bigtech-quality-engineering-automation-framework/actions/workflows/tests.yml/badge.svg)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Gilvando21/bigtech-quality-engineering-automation-framework?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/Gilvando21/bigtech-quality-engineering-automation-framework?style=social)
@@ -8,9 +10,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/Gilvando21/bigtech-quality-engineering-automation-framework)
 ![GitHub language](https://img.shields.io/github/languages/top/Gilvando21/bigtech-quality-engineering-automation-framework)
 
-Enterprise QA Automation Framework demonstrating modern **Quality Engineering practices used in fintech and big tech environments**.
-
-This repository simulates how automation frameworks are structured in companies such as **Nubank, Mercado Livre, and large financial institutions**, focusing on scalable automation, observability, CI/CD integration and multi-layer testing.
+This repository demonstrates how **modern Quality Engineering frameworks** can be structured using practices commonly found in fintech and large‑scale technology companies such as Nubank, Mercado Livre and other high‑availability platforms.
 
 ---
 
@@ -30,7 +30,7 @@ This repository simulates how automation frameworks are structured in companies 
 
 ---
 
-# Features
+# Key Features
 
 - API Automation
 - UI Automation (Playwright)
@@ -45,7 +45,7 @@ This repository simulates how automation frameworks are structured in companies 
 
 ---
 
-# Architecture
+# Project Architecture
 
 ```
 src
@@ -57,6 +57,8 @@ src
  ├── contracts
  ├── observability
 ```
+
+This architecture separates infrastructure, automation layers and observability components to support **scalable test automation systems**.
 
 ---
 
@@ -117,29 +119,27 @@ GenerateReports --> Result
 
 ---
 
-# Visual Architecture Overview
+# Visual Architecture Diagram
 
-Below is a **visual architecture diagram** that represents how the automation layers interact.
+The README supports a visual architecture diagram.
 
 ![Automation Architecture](docs/automation-architecture.png)
 
-To enable this diagram in the repository:
+To enable this diagram:
 
-1. Create a folder in the root of the project:
+Create a folder in the project root:
 
 ```
 docs
 ```
 
-2. Add the architecture image:
+Add the architecture image:
 
 ```
 docs/automation-architecture.png
 ```
 
-Once added, the image will automatically appear in this section of the README.
-
-This is a common practice in **engineering documentation used by large technology companies**.
+This is a common documentation pattern used in **engineering teams to visualize system architecture**.
 
 ---
 
@@ -158,11 +158,11 @@ Example screenshot:
 
 ---
 
-# How to Run the Project
+# How To Run The Project
 
-These instructions allow any engineering team to download and run the framework locally.
+These instructions allow engineering teams to quickly download and execute the framework locally.
 
-## 1. Clone the Repository
+## 1. Clone the repository
 
 ```
 git clone https://github.com/Gilvando21/bigtech-quality-engineering-automation-framework.git
@@ -171,16 +171,16 @@ cd bigtech-quality-engineering-automation-framework
 
 ---
 
-## 2. Install Dependencies
+## 2. Install dependencies
 
 Make sure the following tools are installed:
 
 - .NET 8 SDK
 - Node.js (required for Playwright)
-- k6 (optional for performance tests)
 - Docker (optional)
+- k6 (optional for performance testing)
 
-Restore project dependencies:
+Restore dependencies:
 
 ```
 dotnet restore
@@ -188,7 +188,7 @@ dotnet restore
 
 ---
 
-## 3. Build the Project
+## 3. Build the project
 
 ```
 dotnet build
@@ -196,7 +196,7 @@ dotnet build
 
 ---
 
-## 4. Run Automated Tests
+## 4. Execute automated tests
 
 ```
 dotnet test
@@ -222,7 +222,7 @@ UI tests will:
 
 # Performance Testing
 
-Run performance tests with k6:
+Run performance tests using k6:
 
 ```
 k6 run performance/k6_simulacao_test.js
@@ -230,9 +230,9 @@ k6 run performance/k6_simulacao_test.js
 
 ---
 
-# Docker Environment
+# Docker Test Environment
 
-To run the automation environment with Docker:
+Run the full automation environment using Docker:
 
 ```
 docker-compose up
@@ -243,7 +243,7 @@ This will start:
 - Test runner
 - Grafana dashboard
 
-Grafana default access:
+Grafana access:
 
 ```
 http://localhost:3000
@@ -253,13 +253,13 @@ http://localhost:3000
 
 # Observability
 
-The framework includes observability integration compatible with:
+The framework includes observability support compatible with:
 
 - Grafana
 - Prometheus
 - Test execution metrics
 
-Example configuration:
+Configuration example:
 
 ```
 observability/grafana_dashboard.json
@@ -275,7 +275,7 @@ API endpoint:
 POST /api/v1/simulacao/vgbl
 ```
 
-Financial rule validated:
+Business rule validated:
 
 ```
 IOF = 5% applied to the value exceeding 600000
@@ -283,29 +283,18 @@ IOF = 5% applied to the value exceeding 600000
 
 ---
 
-# Why This Project Exists
+# Purpose of This Project
 
-This project demonstrates how **Quality Engineering frameworks** can support:
+This repository demonstrates how **Quality Engineering frameworks** can support:
 
 - scalable automation
 - service virtualization
 - contract testing
 - performance validation
 - CI/CD pipelines
-- observability for test systems
+- observability for automated tests
 
-These practices are common in **modern fintech and big tech engineering teams**.
-
----
-
-# Engineering Documentation
-
-This repository includes engineering-style documentation similar to internal documentation used by large technology companies:
-
-- Architecture diagrams
-- Automation execution flow
-- CI/CD pipeline visualization
-- Framework design structure
+These practices are widely used in **modern fintech and high‑scale technology engineering teams**.
 
 ---
 
@@ -314,12 +303,12 @@ This repository includes engineering-style documentation similar to internal doc
 **Gilvando Matos**  
 Senior QA Engineer | QA Lead | Quality Engineering Specialist
 
-Expertise:
+Specialties:
 
 - Test Automation Architecture
-- API and UI Automation
+- API & UI Automation
 - CI/CD Integration
-- Observability for Test Systems
+- Observability for Testing Platforms
 - Quality Engineering Strategy
 
 LinkedIn  
