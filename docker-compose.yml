@@ -1,0 +1,16 @@
+
+version: '3'
+
+services:
+
+  qa-tests:
+    image: mcr.microsoft.com/dotnet/sdk:8.0
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: dotnet test
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
