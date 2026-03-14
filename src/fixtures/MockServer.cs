@@ -1,4 +1,3 @@
-
 using WireMock.Server;
 using WireMock.RequestBuilders;
 using WireMock.ResponseBuilders;
@@ -14,10 +13,13 @@ public class MockServer
     {
         Server = WireMockServer.Start(5050);
 
-        Server.Given(Request.Create().WithPath("/api/v1/simulacao/vgbl").UsingPost())
-        .RespondWith(Response.Create().WithCallback(request =>
+        Server.Given(Request.Create()
+            .WithPath("/api/v1/simulacao/vgbl")
+            .UsingPost())
+        .RespondWith(Response.Create()
+            .WithCallback(request =>
         {
-            dynamic body = JsonConvert.DeserializeObject(request.Body);
+            dynamic body = JsonConvert.DeserializeObject(request.Body.ToString());
             decimal aporte = body.aporte;
 
             decimal excedente = aporte > 600000 ? aporte - 600000 : 0;
@@ -26,7 +28,10 @@ public class MockServer
             return new WireMock.ResponseMessage
             {
                 StatusCode = 200,
-                Body = JsonConvert.SerializeObject(new { iof = iof })
+                BodyData = new WireMock.Util.BodyData
+                {
+                    BodyAsString = JsonConvert.SerializeObject(new { iof = iof })
+                }
             };
         }));
     }

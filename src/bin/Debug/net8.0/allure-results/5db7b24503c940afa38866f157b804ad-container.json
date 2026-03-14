@@ -1,0 +1,21 @@
+{
+  "uuid": "d29deafa-6dee-43c9-abba-604d5cab5ea6",
+  "name": "Api.SimulacaoApiTests",
+  "children": [
+    "4dc90236-c9cb-4b31-b993-498559dd7469",
+    "9caf03c5-6f69-4101-9739-33c9a8abe1d9",
+    "101725a6-8e77-4ca5-adef-ee2b05f3e479",
+    "b66a1a43-1b7d-4657-8828-268f887e923f",
+    "ae58f610-056f-4c77-929b-df176b98e217",
+    "61b4d4f5-154e-4b17-b1ed-9331180954de",
+    "749aad70-beb6-492c-a29f-2838a313ed64",
+    "199e67fb-2525-44a5-8844-2ffa4e1159e9",
+    "a67f2955-97ef-4fb1-ba8e-498f22c84049",
+    "80fc1ddd-8f5c-4c71-8268-fb19e6f12864"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1773426077443,
+  "stop": 1773426078379
+}

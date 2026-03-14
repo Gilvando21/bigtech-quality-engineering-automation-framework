@@ -1,0 +1,12 @@
+{
+  "allure": {
+    "directory": "allure-results",
+    "clean": true,
+    "links": [
+      {
+        "type": "issue",
+        "pattern": "https://jira.company.com/browse/{}"
+      }
+    ]
+  }
+}

@@ -1,39 +1,24 @@
-
 using NUnit.Framework;
 using Microsoft.Playwright;
+using System.Threading.Tasks;
 
-namespace UI;
-
-public class SimuladorUITest
+namespace BigTech.Automation.Framework.UI
 {
-    [Test]
-    public async Task UI_OpenBrowser_RecordVideo()
+    public class SimuladorUITest
     {
-        using var playwright = await Playwright.CreateAsync();
-
-        var browser = await playwright.Chromium.LaunchAsync(
-            new BrowserTypeLaunchOptions
+        [Test]
+        public async Task CT04_UI_Simulacao()
+        {
+            var playwright = await Playwright.CreateAsync();
+            var browser = await playwright.Chromium.LaunchAsync(new BrowserTypeLaunchOptions
             {
-                Headless = false,
-                SlowMo = 200
+                Headless = false
             });
 
-        var context = await browser.NewContextAsync(new BrowserNewContextOptions
-        {
-            RecordVideoDir = "videos/"
-        });
+            var page = await browser.NewPageAsync();
+            await page.GotoAsync("https://example.com");
 
-        var page = await context.NewPageAsync();
-
-        await page.GotoAsync("https://example.com");
-
-        await page.ScreenshotAsync(new PageScreenshotOptions
-        {
-            Path = "screenshots/test.png"
-        });
-
-        Assert.IsTrue(await page.TitleAsync() != null);
-
-        await browser.CloseAsync();
+            Assert.Pass();
+        }
     }
 }

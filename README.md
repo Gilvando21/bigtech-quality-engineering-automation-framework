@@ -154,11 +154,10 @@ Example screenshot:
 
 ## 1 Clone repository
 
+```bash
 git clone https://github.com/Gilvando21/bigtech-quality-engineering-automation-framework.git
-
 cd bigtech-quality-engineering-automation-framework
-
----
+```
 
 ## 2 Install dependencies
 
@@ -171,38 +170,42 @@ Ensure installed:
 
 Restore dependencies:
 
+```bash
 dotnet restore
-
----
+```
 
 ## 3 Build project
 
+```bash
 dotnet build
-
----
+```
 
 ## 4 Run automated tests
 
+```bash
 dotnet test
+```
 
 Example output:
 
+```
 CT01_API_Test
 CT02_API_Test
 ...
 CT10_API_Test
-
----
+```
 
 # Performance Testing
 
+```bash
 k6 run performance/k6_simulacao_test.js
-
----
+```
 
 # Docker Test Environment
 
+```bash
 docker-compose up
+```
 
 Access Grafana:
 
@@ -232,14 +235,38 @@ IOF = 5% applied to the value exceeding 600000
 
 ---
 
+# Test Reports (Allure)
+
+The framework generates test reports using **Allure**.
+
+To generate the report locally:
+
+```bash
+dotnet test
+allure serve allure-results
+```
+
+The report dashboard provides:
+
+- Test execution overview
+- Suites and behaviors
+- Execution timeline
+- Categories
+- Environment information
+
+Environment metadata is defined in:
+
+allure-results/environment.properties
+
+---
+
 # Author
 
 Gilvando Matos
 
 Senior QA Engineer | QA Lead | Quality Engineering Specialist
 
-LinkedIn
-https://www.linkedin.com/in/gilvando-matos-3a259821/
+LinkedIn: https://www.linkedin.com/in/gilvando-matos-3a259821/
 
 GitHub
 https://github.com/Gilvando21

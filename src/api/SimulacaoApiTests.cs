@@ -1,10 +1,14 @@
-
 using NUnit.Framework;
 using Core;
 using Fixtures;
+using Allure.NUnit;
+using Allure.NUnit.Attributes;
+using Allure.Net.Commons;
 
 namespace Api;
 
+[AllureNUnit]
+[AllureSuite("Simulacao API")]
 [Parallelizable(ParallelScope.All)]
 public class SimulacaoApiTests
 {
@@ -12,14 +16,12 @@ public class SimulacaoApiTests
     MockServer mock;
 
     [OneTimeSetUp]
-    public void Setup()
-    {
-        mock = new MockServer();
-        mock.Start();
-        api = new ApiClient("http://localhost:5050");
-    }
-
-
+public void Setup()
+{
+    mock = new MockServer();
+    mock.Start();
+    api = new ApiClient("http://localhost:5050");
+}
     [Test]
     public void CT01_API_Test()
     {
@@ -89,7 +91,6 @@ public class SimulacaoApiTests
         var resp = api.Post("/api/v1/simulacao/vgbl", new { aporte = 1000000 });
         Assert.AreEqual(200,(int)resp.StatusCode);
     }
-
 
     [OneTimeTearDown]
     public void TearDown()

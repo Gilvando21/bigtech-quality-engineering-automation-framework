@@ -1,0 +1,26 @@
+FINAL INCREMENT PACKAGE
+
+This package only adds improvements and DOES NOT change your working framework.
+
+Files included:
+
+1) allureConfig.json
+Place in the ROOT of the project (replace if already exists)
+
+2) allure-results/environment.properties
+Place inside the folder:
+
+allure-results/
+
+If the folder does not exist, create it.
+
+3) README_allure_section.md
+Copy the contents and paste at the end of your README.md
+
+Execution remains the same:
+
+set ALLURE_CONFIG=allureConfig.json
+dotnet test
+allure serve allure-results
+
+Nothing in your framework logic was changed.

@@ -1,0 +1,49 @@
+{
+  "uuid": "a67f2955-97ef-4fb1-ba8e-498f22c84049",
+  "historyId": "da26d36f87a26c731fb8b13b7a0cc8f3",
+  "testCaseId": "9f75abc6ed58758f961ca5b0c92287c6",
+  "fullName": "BigTech.Automation.Framework:Api.SimulacaoApiTests.CT06_API_Test()",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-7JGJP5L"
+    },
+    {
+      "name": "language",
+      "value": "C#"
+    },
+    {
+      "name": "framework",
+      "value": "NUnit 3"
+    },
+    {
+      "name": "package",
+      "value": "Api"
+    },
+    {
+      "name": "testMethod",
+      "value": "CT06_API_Test"
+    },
+    {
+      "name": "testClass",
+      "value": "SimulacaoApiTests"
+    },
+    {
+      "name": "suite",
+      "value": "Simulacao API"
+    }
+  ],
+  "links": [],
+  "name": "CT06_API_Test",
+  "status": "passed",
+  "stage": "finished",
+  "steps": [],
+  "attachments": [],
+  "parameters": [],
+  "start": 1773426077848,
+  "stop": 1773426078332
+}

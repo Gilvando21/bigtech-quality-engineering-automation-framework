@@ -1,0 +1,12 @@
+{
+  "uuid": "d04bf0bd-22ff-4f78-8cdc-bc6f3b17f112",
+  "name": "Api.SimulacaoApiTests.CT07_API_Test",
+  "children": [
+    "9caf03c5-6f69-4101-9739-33c9a8abe1d9"
+  ],
+  "befores": [],
+  "afters": [],
+  "links": [],
+  "start": 1773426077847,
+  "stop": 1773426078361
+}
