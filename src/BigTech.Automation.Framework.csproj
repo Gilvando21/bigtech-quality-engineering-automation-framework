@@ -4,7 +4,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <AllureResultsDirectory>allure-results</AllureResultsDirectory>
+
+    <!-- Allure results directory -->
+    <ALLURE_RESULTS_DIRECTORY>..\allure-results</ALLURE_RESULTS_DIRECTORY>
   </PropertyGroup>
 
   <ItemGroup>
