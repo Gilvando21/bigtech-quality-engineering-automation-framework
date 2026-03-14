@@ -6,7 +6,6 @@ on:
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -28,10 +27,10 @@ jobs:
         working-directory: src
 
       - name: Install Playwright Browsers
-  run: |
-    cd src
-    dotnet build
-    pwsh bin/Debug/net8.0/playwright.ps1 install
+        run: |
+          cd src
+          dotnet build
+          pwsh bin/Debug/net8.0/playwright.ps1 install
 
       - name: Run Tests
         run: dotnet test --no-build
