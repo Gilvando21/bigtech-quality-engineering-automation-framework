@@ -2,6 +2,7 @@
   "allure": {
     "directory": "allure-results",
     "clean": true,
+
     "links": [
       {
         "type": "issue",
