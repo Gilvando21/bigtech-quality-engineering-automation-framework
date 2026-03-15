@@ -29,7 +29,6 @@ jobs:
       - name: Install Playwright Browsers
         run: |
           cd src
-          dotnet build
           pwsh bin/Debug/net8.0/playwright.ps1 install
 
       - name: Run Tests
@@ -43,11 +42,11 @@ jobs:
           java-version: 17
 
       - name: Install Allure
-  run: |
-    wget https://github.com/allure-framework/allure2/releases/download/2.38.0/allure-2.38.0.tgz
-    tar -xvzf allure-2.38.0.tgz
-    sudo mv allure-2.38.0 /opt/allure
-    sudo ln -s /opt/allure/bin/allure /usr/bin/allure
+        run: |
+          wget https://github.com/allure-framework/allure2/releases/download/2.38.0/allure-2.38.0.tgz
+          tar -xvzf allure-2.38.0.tgz
+          sudo mv allure-2.38.0 /opt/allure
+          sudo ln -s /opt/allure/bin/allure /usr/bin/allure
 
       - name: Generate Allure Report
         run: |
