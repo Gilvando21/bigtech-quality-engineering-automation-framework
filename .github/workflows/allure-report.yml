@@ -19,12 +19,10 @@ jobs:
           dotnet-version: 8.0.x
 
       - name: Restore dependencies
-        run: dotnet restore
-        working-directory: src
+        run: dotnet restore src/BigTech.Automation.Framework.csproj
 
       - name: Build
-        run: dotnet build --no-restore
-        working-directory: src
+        run: dotnet build src/BigTech.Automation.Framework.csproj --no-restore
 
       - name: Install Playwright Browsers
         run: |
@@ -32,8 +30,7 @@ jobs:
           pwsh bin/Debug/net8.0/playwright.ps1 install
 
       - name: Run Tests
-        run: dotnet test --no-build
-        working-directory: src
+        run: dotnet test src/BigTech.Automation.Framework.csproj --no-build
 
       - name: Install Java (required for Allure)
         uses: actions/setup-java@v4
